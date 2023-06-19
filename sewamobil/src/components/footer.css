@@ -1,0 +1,86 @@
+#fooCont{
+    margin-top: 150px;
+    margin-bottom: 100px;
+    margin-left: 136px;
+    margin-right: 163px;
+
+}
+
+#fooCol1{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#fooCol1 p{
+    display: block;
+    margin-bottom: 16px;
+
+}
+
+#fooCol2{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    
+}
+
+#fooCol2 a{
+    display: block;
+    margin-bottom: 16px;
+    text-decoration: none;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+
+    color: #000000;
+    
+}
+
+
+#fooCol3{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#connCol img{
+    margin-right: 16px;
+}
+
+#fooCol4{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+@media (max-width: 767px){
+    #fooCont{
+        text-align: left;
+        margin-left: 16px;
+        
+    }
+
+    #fooRow{
+        display: block;
+        margin-right: 76px;
+    }
+
+    #fooCol4{
+        margin-top: 16px;
+    }
+    
+    
+
+}

@@ -1,0 +1,31 @@
+#serCard{
+    margin-left: 196px;
+    margin-right: 196px;
+}
+
+#serForm{
+    margin:24px;
+}
+
+#serRow{
+    display: flex;
+    justify-content: center;
+}
+
+#sebtCol{
+    margin-top: 40px;
+
+}
+
+.btn-custom{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+
+    background: #5CB85F;
+    color: white;
+    border-radius: 2px;
+
+}

@@ -1,0 +1,63 @@
+#ouCont{
+    margin-left: 206px;
+    margin-right: 207px;
+    margin-top: 100px;
+}
+
+#ouPic{
+    width:459px;
+    height: auto;
+}
+
+
+
+#ouHea{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+#ouPar{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px
+}
+
+.ouItem{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 767px){
+    #ouCont{
+        margin-top: 60px;
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    #ouPic{
+        width:252px;
+        height: auto;
+    }
+    
+   
+
+    #ouHea{
+        margin-top: 16px;
+        margin-bottom: 16px;
+        margin-right: 16px;
+    }
+    #ouPar{
+        margin-bottom: 16px;
+        margin-right: 16px;
+    }
+}

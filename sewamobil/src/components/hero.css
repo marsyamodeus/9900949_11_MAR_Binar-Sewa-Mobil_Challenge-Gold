@@ -1,0 +1,71 @@
+.heroCont{
+    margin-top: 177px;
+
+}
+
+#heroCol1{
+    margin-left: 136px;
+}
+
+#heroHea{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 150%;
+    
+    margin-bottom: 16px;
+}
+
+#heroPar{
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+ 
+    margin-bottom: 16px;
+    margin-right: 136px;
+
+}
+
+.btn-custom{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+
+    background: #5CB85F;
+    color: white;
+    border-radius: 2px;
+
+}
+
+
+#heroPic{
+    width:550px;
+    height: auto;
+}
+
+@media (max-width: 767px){
+    .heroCont{
+        margin-top: 10px;   
+    }
+    #heroCol1{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+    #heroPar{
+        margin-right: 0;
+    }
+    #heroPic{
+        width:380px;
+        height: auto;
+
+        margin-top:25px;
+    }
+}
+
+
