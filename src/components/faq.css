@@ -1,0 +1,19 @@
+#faqCont{
+    margin-top: 100px;
+}
+
+#faqHea{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+#faqPar{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}

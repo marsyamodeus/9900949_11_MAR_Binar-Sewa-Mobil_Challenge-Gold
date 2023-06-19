@@ -1,0 +1,10 @@
+.thenavs{
+    background:#F1F3FF;
+    padding: 24px 249px 0 136px;
+}
+
+@media (max-width: 767px){
+    .thenavs{
+        padding: 0px;
+    }
+}

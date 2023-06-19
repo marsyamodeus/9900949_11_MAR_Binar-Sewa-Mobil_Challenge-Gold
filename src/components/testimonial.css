@@ -1,0 +1,114 @@
+#tesCont{
+    margin-top: 100px;
+}
+
+#tesRow1{
+    text-align: center;
+}
+
+#tesHea{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+
+}
+
+#tesPar{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+
+#tesRow2{
+    margin-top: 40px;
+}
+
+
+/* handles reviews */
+
+
+
+#revCard {
+    background-color: #F1F3FF; 
+    border: none; 
+    border-radius: 10px; 
+    width: 619px;
+    height: 270px;
+  }
+  
+#revBody{
+    display: flex;
+    align-items: center;
+}
+
+#revPic img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-left: 46px;
+    margin-right: 46px;
+  }
+  
+#revCont {
+    text-align: left;
+  }
+
+#revSta{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+  
+#revPer {
+    margin-bottom: 10px; 
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+  }
+  
+#revTex {
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    
+    color: #000000;
+    
+  }
+
+  
+@media (max-width: 767px){
+    #revCard {
+        
+        width: 336px;
+        height: 400px;
+      }
+    #revBody{
+        display: block;
+    }
+    #revPic img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        margin-left: 124px;
+        margin-right: 124px;
+      }
+    #revSta{
+        margin-left: 124px;
+        margin-right: 124px;
+    }
+      
+   
+}

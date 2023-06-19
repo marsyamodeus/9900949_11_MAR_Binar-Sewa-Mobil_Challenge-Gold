@@ -1,0 +1,66 @@
+#whyCont{
+    margin-left: 136px;
+    margin-right: 136px;
+    margin-top:100px;
+}
+
+#whyHea{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+#whyPar{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#whyRow2{
+    margin-top:40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#whyItem{
+    border: 1px solid #D0D0D0;
+    border-radius: 8px;
+}
+
+#wuTit{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#wuPar{
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
+@media (max-width: 767px){
+    #whyCont{
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 16px;
+    }
+    #whyRow1{
+        text-align: center;
+    }
+    #whyItem{
+        padding-right: 26px;
+        margin-top: 16px;
+        margin-right: 16px;
+        
+    }
+}
