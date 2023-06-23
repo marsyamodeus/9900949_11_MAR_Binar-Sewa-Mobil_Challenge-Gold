@@ -1,6 +1,8 @@
-import React from 'react'
+import React, { Component }  from 'react';
 import { Container, Row, Carousel, Card } from 'react-bootstrap';
-import './testimonial.css'
+import './testimonial.css';
+// import Slider from "react-slick";
+// import CarouselSlick from './CarouselSlick';
 
 const Testimonial = ({testitem}) => {
   return (
@@ -10,6 +12,9 @@ const Testimonial = ({testitem}) => {
           <p id='tesPar'>Berbagai review positif dari para pelanggan kami</p>
         </Row>
         <Row id='tesRow2'>
+
+          {/* <CarouselSlick /> */}
+
           <Carousel id='revCaro' interval={null}>
             {
               testitem.map((item)=>

@@ -4,7 +4,6 @@ import './cardetail.css';
 import MainNavbar from '../components/MainNavbar'
 import Hero from '../components/Hero';
 import Footer from '../components/Footer';
-import SearchBar from '../components/SearchBar';
 import DetailPack from '../components/DetailPack';
 
 import {menuList, packInDb, packExDb,packRrDb} from '../helpers/constants';

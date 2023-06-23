@@ -12,7 +12,7 @@ const CarCard = () => {
   const getCarData = () => {
 
     axios
-      .get(`https://api-car-rental.binaracademy.org/customer/car/${id}`)
+      .get(`https://bootcamp-rent-cars.herokuapp.com/customer/car/${id}`)
       .then((res)=>{
         setData(res.data);
         console.log(res);

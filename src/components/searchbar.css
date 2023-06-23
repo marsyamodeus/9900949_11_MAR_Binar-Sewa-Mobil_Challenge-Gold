@@ -1,35 +1,49 @@
-#serCard{
-    margin-left: 196px;
-    margin-right: 196px;
-}
-
-#serForm{
-    margin:24px;
-}
-
-#serRow{
+#serCard {
+    margin: 24px;
+    padding: 24px;
+  }
+  
+  #serForm {
+    margin: 0;
+  }
+  
+  #serRow {
     display: flex;
-    justify-content: center;
-}
-
-#sebtCol{
-    margin-top: 42px;
-
-}
-
-.btn-custom{
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  #serForm {
+    margin: 24px;
+  }
+  
+  #sebtCol {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .btn-custom {
     font-family: 'Arial';
     font-style: normal;
     font-weight: 700;
     font-size: 13px;
     line-height: 20px;
-
     background: #5CB85F;
     color: white;
     border-radius: 2px;
+    margin-top: 42px;
+  }
+  #serButt{ 
+    display: inline-block;
+    margin-top: 24px;}
 
-}
+  #serForm .form-select {
+    padding: 6px 12px;
+  }
 
+  #restCont{
+    margin-top: 100px;
+  }
 
 .carCards{
     margin-top: 40px ;

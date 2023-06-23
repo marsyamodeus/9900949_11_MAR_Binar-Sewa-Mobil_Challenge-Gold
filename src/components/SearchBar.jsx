@@ -12,7 +12,11 @@ const SearchBar = () => {
     const [data, setData] = useState([]);
     const [name, setName] = useState("");
     const [category, setCategory] = useState("");
-    const [status, setStatus] = useState("");
+    const [isRented, setisRented] = useState("");
+    // const [price, setPrice] = useState();
+    const [minPrice, setMinPrice] = useState('');
+    const [maxPrice, setMaxPrice] = useState('');
+
 
     const navigate = useNavigate();
 
@@ -21,7 +25,7 @@ const SearchBar = () => {
      },[]);
   
      const getData = () => {
-        const api = `https://api-car-rental.binaracademy.org/customer/v2/car?name=${name}&category=${category}&status=${status}`;
+        const api = `https://bootcamp-rent-cars.herokuapp.com/customer/v2/car?name=${name}&category=${category}&isRented=${isRented}&minPrice=${minPrice}&maxPrice=${maxPrice}`;
         
         axios
            .get(api)
@@ -39,8 +43,8 @@ const SearchBar = () => {
         setCategory(e.target.value);
       };
   
-      const handleStatusChange = (e) => {
-        setStatus(e.target.value);
+      const handleisRentedChange = (e) => {
+        setisRented(e.target.value);
       };
 
       const handleMinPriceChange = (e) => {
@@ -57,14 +61,14 @@ const SearchBar = () => {
 
   return (
     <Container>
-        <Card id='serCard'>
+        <Card className='searchPanel' id='serCard'>
             <Form id ='serForm'>
                 <Row id='serRow'>
-                    <Col md={3}>
+                    <Col  md={3} style={{ width: 'auto' }}>
                         <p>Nama Mobil</p>
                         <Form.Control name="carName" onChange={handleNameChange} />
                     </Col>
-                    <Col md={3}>
+                    <Col  md={3} style={{ width: 'auto' }}>
                         <p>Kategori</p>
                         <Form.Select name="category"  onChange={handleCategChange}>
                             <option value=""></option>
@@ -73,24 +77,24 @@ const SearchBar = () => {
                             <option value="large">6 - 8 orang</option>
                         </Form.Select>
                     </Col>
-                    <Col md={2}>
+                    <Col  md={2} style={{ width: 'auto' }}>
                         <p>Harga minimum</p>
-                        <Form.Control name='minPrice'/>
+                        <Form.Control name='minPrice'onChange={handleMinPriceChange}/>
                     </Col>
-                    <Col md={2}>
+                    <Col  md={2} style={{ width: 'auto' }}>
                         <p>Harga maximum</p>
-                        <Form.Control name='maxPrice'/>
+                        <Form.Control name='maxPrice'onChange={handleMaxPriceChange}/>
                     </Col>
-                    <Col md={2}>
+                    <Col  md={3} style={{ width: 'auto' }}>
                         <p>Status</p>
-                        <Form.Select name="status" defaultValue="status" onChange={handleStatusChange}>
+                        <Form.Select name="isRented" onChange={handleisRentedChange}>
                             <option value=""></option>
                             <option value="true">Sudah disewa</option>
                             <option value="false">Belum disewa</option>
                         </Form.Select>
                     </Col>
-                    <Col id='sebtCol' md={1}>
-                        <Button variant="custom" onClick={getData}>Search</Button>
+                    <Col id='sebtCol'  md={1} style={{ width: 'auto' }}>
+                        <Button variant="custom" id='serButt' onClick={getData}>Search</Button>
                     </Col>
                 </Row>
             </Form>
@@ -99,7 +103,7 @@ const SearchBar = () => {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)'}}>
         {
             data.map((item)=>(
-                <Container id='restCont' key={item.id} style={{ width: '100%', maxWidth: '18rem' }}>
+                <Container id='restCont' key={item.id} style={{ width: '100%', maxWidth: '21rem' }}>
                      <Card className='carCards' style={{width:'333 px'}}>
                         <Card.Img variant="top" src={item.image} style={{width:'270 px', height:'160 px'}}/>
                         <Card.Body>

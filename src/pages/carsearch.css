@@ -1,3 +1,8 @@
 #upperSect{
     background: #F1F3FF;
 }
+
+.searchPanel{
+    position: absolute;
+    bottom: 1rem;
+}
