@@ -5,7 +5,6 @@ import {menuList, ousSect, whyUsSect, testiSect, faqSect} from '../helpers/const
 import './homepage.css'
 
 import MainNavbar from '../components/MainNavbar';
-import logoPic from '/logo.png';
 import Hero from '../components/Hero';
 import Ourservices from '../components/Ourservices';
 import Whyus from '../components/Whyus';
@@ -14,6 +13,7 @@ import CtaBanner from '../components/CtaBanner';
 import Faq from '../components/Faq';
 import Footer from '../components/Footer';
 
+import logoPic from '../assets/logo.png';
 
 const Homepage = () => {
   return (

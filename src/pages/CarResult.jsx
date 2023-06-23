@@ -2,7 +2,7 @@ import React from 'react';
 import './carresult.css';
 
 import {menuList} from '../helpers/constants';
-import logoPic from '/logo.png';
+import logoPic from '../assets/logo.png';
 
 import MainNavbar from '../components/MainNavbar'
 import Hero from '../components/Hero';

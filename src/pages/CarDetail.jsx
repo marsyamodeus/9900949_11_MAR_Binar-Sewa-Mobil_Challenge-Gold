@@ -8,7 +8,7 @@ import SearchBar from '../components/SearchBar';
 import DetailPack from '../components/DetailPack';
 
 import {menuList, packInDb, packExDb,packRrDb} from '../helpers/constants';
-import logoPic from '/logo.png';
+import logoPic from '../assets/logo.png';
 
 const CarDetail = () => {
   return (
@@ -17,7 +17,6 @@ const CarDetail = () => {
         <MainNavbar menu={menuList} logo= {logoPic}/>
         <Hero showBtn={false} showHea={false} showPic={false}/>
       </div>
-      <SearchBar />
       <DetailPack incdb={packInDb} excdb={packExDb} rrodb={packRrDb} />
       <Footer />
     </div>

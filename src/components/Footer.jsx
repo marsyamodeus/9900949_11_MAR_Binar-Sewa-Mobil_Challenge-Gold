@@ -2,6 +2,13 @@ import React from 'react'
 import { Container, Row, Col} from 'react-bootstrap';
 import './footer.css';
 
+//footer-related
+import iconFb from '../assets/icon_fb.png';
+import iconIg from '../assets/icon_ig.png';
+import iconTw from '../assets/icon_tw.png';
+import iconEm from '../assets/icon_em.png';
+import iconTc from '../assets/icon_tc.png';
+import binarLogo from '../assets/logo.png';
 
 const Footer = () => {
   return (
@@ -21,16 +28,16 @@ const Footer = () => {
             <Col id='fooCol3'>
                 <p>Connect with us</p>
                 <Col id='connCol'>
-                    <img src='icon_fb.png' alt='iconfb'/>
-                    <img src='icon_ig.png' alt='iconig'/>
-                    <img src='icon_tw.png' alt='icontw'/>
-                    <img src='icon_em.png' alt='iconem'/>
-                    <img src='icon_tc.png' alt='icontc'/>
+                    <img src= {iconFb} alt='iconfb'/>
+                    <img src= {iconIg} alt='iconig'/>
+                    <img src= {iconTw} alt='icontw'/>
+                    <img src= {iconEm} alt='iconem'/>
+                    <img src= {iconTc} alt='icontc'/>
                 </Col>
             </Col>
             <Col id='fooCol4'>
                 <p>Copyright Binar 2022</p>
-                <img src='logo.png' alt='logo'/>
+                <img src={binarLogo} alt='logo'/>
             </Col>
         </Row>
         
